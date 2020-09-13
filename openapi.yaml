@@ -1,0 +1,40 @@
+openapi: 3.0.0
+info:
+  title: Student Details example
+  description: The students API description
+  version: '1.0'
+  contact: {}
+host: nest-api.endpoints.nestjsproject.cloud.goog
+tags:
+  - name: student
+    description: ''
+servers: []
+components: {}
+paths:
+  /:
+    get:
+      operationId: AppController_getHello
+      parameters: []
+      responses:
+        '200':
+          description: ''
+  /student/add:
+    post:
+      operationId: StudentController_postStudentDetails
+      parameters: []
+      responses:
+        '201':
+          description: ''
+  '/student/get/{studentId}':
+    get:
+      operationId: StudentController_getStudentDetails
+      parameters:
+        - name: studentId
+          required: true
+          in: path
+          schema:
+            type: number
+      responses:
+        '200':
+          description: ''
+
