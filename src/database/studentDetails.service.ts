@@ -9,7 +9,7 @@ export class StudentDetailsService implements OnModuleInit{
   constructor(){}
   async onModuleInit(): Promise<void> {
     try{
-      this.StudentMongoClient = await MongoClient.connect("mongodb+srv://koumudi:koumudi@1998@cluster0.kgbtq.mongodb.net/student?retryWrites=true&w=majority");
+      this.StudentMongoClient = await MongoClient.connect("mongodb+srv://ClientName:ClientPassword@cluster0.kgbtq.mongodb.net/student?retryWrites=true&w=majority");
       this.StudentDb = this.StudentMongoClient.db("student");
       console.log("Connection to student database successful");
     }
