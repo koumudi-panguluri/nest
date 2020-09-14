@@ -1,5 +1,4 @@
 // author `Koumudi Panguluri`
-
 import { Injectable } from "@nestjs/common";
 import { StudentDetailsService } from "src/database/studentDetails.service";
 import { Student } from "./student.model";

@@ -1,3 +1,4 @@
+// author `Koumudi Panguluri`
 export class Student{
   studentId?:number;
   name?:string;
